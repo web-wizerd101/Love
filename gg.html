@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Proposal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #ff4d4d;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .main {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .heart-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .heart {
+        width: 100px;
+        height: 90px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: heartbeat 2s infinite;
+    }
+    
+    .heart-piece {
+        width: 50px;
+        height: 80px;
+        background-color: #ff4d4d;
+        position: absolute;
+        top: 0;
+        border-radius: 50px 50px 0 0;
+    }
+    
+    .top {
+        transform: rotate(-45deg);
+    }
+    
+    .bottom {
+        transform: rotate(45deg);
+    }
+    
+    @keyframes heartbeat {
+        0% {
+            transform: scale(0.6);
+        }
+        50% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0.6);
+        }
+    }
+    
+</style>
+<body>
+    <header>
+        <h1>Will You Marry Me?</h1>
+    </header>
+    <main>
+        <div class="heart-container">
+            <div class="heart">
+                <div class="heart-piece top"></div>
+                <div class="heart-piece bottom"></div>
+            </div>
+        </div>
+        <div class="proposal">
+            <p>My Dearest [Partner's Name],</p>
+            <p>As we've journeyed through life together, my love for you has only grown stronger with each passing day.</p>
+            <p>You are my rock, my joy, and my deepest love.</p>
+            <p>Today, I want to ask you the most important question of my life...</p>
+            <p>Will you marry me?</p>
+            <p>I can't imagine my life without you by my side. Together, we can conquer anything.</p>
+            <p>Please say yes and make me the happiest person alive.</p>
+            <p>With all my love,</p>
+            <p>[Your Name]</p>
+        </div>
+    </main>
+</body>
+</html>
